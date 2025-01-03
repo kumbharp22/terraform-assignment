@@ -1,8 +1,13 @@
+
+
+
+https://github.com/user-attachments/assets/6e99a8ec-29b4-4872-9136-9936b4513a74
+
+
 # **HTTP Service with Terraform Deployment**
 
 This repository demonstrates the implementation of an HTTP service that interacts with an AWS S3 bucket to list its contents, along with automated deployment using Terraform.
 
----
 
 ## **Overview**
 
@@ -21,8 +26,6 @@ This repository demonstrates the implementation of an HTTP service that interact
   - **Security Groups**: Allows HTTP (port 5000) and SSH (port 22) access.
 - Automates HTTP service deployment on the EC2 instance.
 
----
-
 
 ### **Prerequisites**
 - AWS CLI installed and configured.
@@ -36,7 +39,7 @@ terraform init
 terraform apply
 After Terraform completes, it will output the public IP of the EC2 instance. You can access the service via this IP on port 5000(already given url to copy paste in terraform output)  http://<EC2_Public_IP>:5000/list-bucket-content
 
-Terraform Resources created:
+### **Terraform Resources created**
 
 IAM Role: Provides read-only access to the S3 bucket(given in terraform).
 EC2 Instance: Deploys the Flask app with all necessary dependencies.
